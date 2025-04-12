@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Learn</title>
+	<style>body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+    </style>
+
+</head>
+<body>
+<form action="">
+<div>
+	<label for="name">Name</label>
+	<input id="name" type="text" placeholder="Enter Your Name" Required>
+</div>
+<div>
+	<label for="password">Password</label>
+   <input id="password" type="text" palceholder="Enter Password" Required>
+</div>
+<div>
+   <label for="email">Email</label>
+   <input id="email" type="email" placeholder="Enter Email" required>
+</div>
+<div>
+   <label for="dob">Date Of Birth</label>
+   <input id ="dob" type="Date" required>
+</div>
+<div>
+   <label for="gender">Gender</label>
+   <select id="gender" required>
+   	<option value=""disabled Selected>Selected Gender</option>
+   	<option value="male">Male</option>
+   	<option value="female">Female</option>
+   	<option value="other">Other</option>
+   </select>
+</div>
+<div>
+   <p>Subscription Plan</p>
+   <input id="basic" type="radio" name="Subscription" required>
+   <label for="basic">Basic</label>
+   <input id="premium" type="radio" name="Subscription" required>
+   <label for="premium">Premium</label>
+   <input for="vip" type="radio" name="Subscription" required>
+   <label for="vip">VIP</label>
+
+</div>
+<div>
+   <input id="term" type="checkbox" required>
+   <label for="term">I agree to the terms and conditions</label>
+</div>
+<div>
+
+   <label for="comments">Comments</label>
+   <textarea id="comments" placeholder="Enter your Comments" row="4" ></textarea>
+
+</div>
+<div>
+   	<button id="submit">Submit</button>
+</div
+</form>
+</body>
+</html>
+
