@@ -1,0 +1,22 @@
+.{
+	margin: 200px;
+	padding: 200px;
+	text-align: center;
+}
+	
+	.red{
+		background: red;
+		color: white;
+		height: 344px;
+		border: 2px solid Black;
+	}
+	.green{
+		background: green;
+		color: white;
+		border: 2px solid Black;
+	}
+
+	p{
+		background-color: #300303;
+		color: white;
+	}
