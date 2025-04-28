@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Collapse</title>
+    <style>
+        .box1{
+            margin: 50px;
+            width: 344px;
+            background-color: pink;
+            border: 2px solid black;           
+        }
+        .box2{
+            margin: 100px;
+            width: 344px;
+            background-color: pink;
+            border: 2px solid black;
+        }
+        .box3{
+            border: 2px solid black;
+            background-color: pink;
+            margin: 30px;
+            height: 300px;
+            width: 200px;
+        }
+        .box4{
+            border: 5px solid black;
+            background-color: pink;
+            padding: 6px;
+            height: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+    When two margin from different elements overlap, the equivaled margin is the greater of the two. This is called margin Collapse. Agar do margin box1 or box2 30px 30px hai tho dhono ke bech ka gap 60px nhi hoga balki 30px hi rahega.kyunki dhono ko sirf 30
+    hi chahiye. ye 30px or dusra 40px hai tho bich ka gap 40px hi hoga jo bada number h wo hi hoga. isko hi kehthe Margin Collapse.
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ea distinctio at fugiat qui maiores officia exercitationem, alias nostrum sint quos dolorem voluptates voluptatem quibusdam ullam pariatur tempora deleniti sit explicabo harum aperiam. Beatae.
+    </div>
+    <h1>box sizing</h1>
+    <div class="box3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa perspiciatis facilis ullam accusantium, distinctio aut maiores ea veritatis ducimus, beatae totam corporis eveniet quo officiis cum voluptatibus. Sunt tempora quae, officia cupiditate dolore vel.
+    </div>
+    <div class="box4">
+    </div>
+</body>
+</html>
